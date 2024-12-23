@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trézor.io/start® | Starting Up Your Device | Trezor®</title>
+    <meta name="description" content="Begin your crypto security journey at Trézor.io/start. Set up your Trezor wallet for safe, efficient, and secure cryptocurrency management in minutes.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0d6938;
+            animation: fadeIn 1.5s ease-in;
+        }
+        header nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+        header nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: #0d6938;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .hero {
+            text-align: center;
+            padding: 3rem 2rem;
+            background-color: #ffffff;
+            margin-bottom: 2rem;
+            animation: slideIn 1s ease-out;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #0d6938;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .hero .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .hero button {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        .btn-green {
+            background-color: #0d6938;
+            color: #fff;
+        }
+        .btn-gray {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .hero button:hover {
+            transform: scale(1.1);
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .content {
+            padding: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            background-color: #ffffff;
+            margin: 0 2rem 2rem 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            animation: fadeIn 1.5s ease-in;
+        }
+        .content .text {
+            flex: 1;
+            min-width: 300px;
+        }
+        .content .text h2 {
+            font-size: 2rem;
+            color: #0d6938;
+            margin-bottom: 1rem;
+        }
+        .content .text p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        .content .image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        .content .image img {
+            max-width: 100%;
+            border-radius: 1rem;
+            transition: transform 0.3s;
+        }
+        .content .image img:hover {
+            transform: scale(1.05);
+        }
+        .details {
+            padding: 2rem;
+            background-color: #ffffff;
+            margin: 0 2rem 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            animation: fadeIn 2s ease-in;
+        }
+        .details h2 {
+            font-size: 2rem;
+            color: #0d6938;
+            margin-bottom: 1rem;
+        }
+        .details p {
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #0d6938;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+        footer {
+            animation: fadeIn 3s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Trezor</div>
+        <nav>
+            <a href="#">Products</a>
+            <a href="#">App</a>
+            <a href="#">Coins</a>
+            <a href="#">Learn & Support</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Congratulations on getting your new Trezor</h1>
+        <p>Setup & take control of your Trezor with our desktop app. Download Trezor Suite below.</p>
+        <div class="buttons">
+            <button class="btn-green">Download for desktop</button>
+            <button class="btn-gray">Trezor Suite for web</button>
+        </div>
+        <p>Version: v24.9.2 · Signature · Signing key 2020 Signing key 2021</p>
+    </section>
+
+    <section class="content">
+        <div class="text">
+            <h2>Coin Management</h2>
+            <p>Connect your hardware wallet with Trezor Suite. Send & receive coins, track your portfolio, trade assets, or pay for daily essentials directly from the app.</p>
+        </div>
+        <div class="image">
+            <img src="https://trezor.io/images/suite/coin-security.png" alt="Coin Management">
+        </div>
+    </section>
+
+    <section class="details">
+        <h2>Welcome to Trézor.io/start</h2>
+        <p>Trézor.io/start is the ultimate starting point for new Trezor users. Designed to make your journey simple and secure, this page guides you through setting up your Trezor hardware wallet with ease. From installing the Trezor Suite to connecting your device and creating a recovery seed, Trézor.io/start ensures that every step is seamless and intuitive.</p>
+        <p>With Trézor.io/start, you can gain full control of your digital assets. This platform is built to provide unmatched security, protecting your cryptocurrencies from online threats and unauthorized access. Trezor Suite, available for both desktop and web, offers a user-friendly interface for managing your portfolio, trading assets, and keeping track of market trends.</p>
+        <p>Setting up your wallet is quick and straightforward. Simply follow the on-screen instructions to initialize your device and back up your recovery seed. This seed is your safety net, ensuring that you can always recover your funds even if your device is lost or damaged.</p>
+        <p>Trézor.io/start is not just about security; it's also about empowerment. By taking control of your Trezor, you're joining a global community of crypto enthusiasts who value privacy and independence. Whether you're a seasoned investor or a crypto newbie, Trézor.io/start provides all the tools and resources you need to succeed in the world of digital finance.</p>
+        <p>Visit Trézor.io/start today to unlock the full potential of your Trezor wallet. Discover how easy it is to secure, manage, and grow your crypto assets, all while enjoying peace of mind. Your journey to financial freedom begins here.</p>
+    </section>
+
+    <footer>
+        &copy; 2024 Trezor. All rights reserved.
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trézor.io/start® | Starting Up Your Device | Trezor®</title>
+    <meta name="description" content="Begin your crypto security journey at Trézor.io/start. Set up your Trezor wallet for safe, efficient, and secure cryptocurrency management in minutes.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0d6938;
+            animation: fadeIn 1.5s ease-in;
+        }
+        header nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+        header nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: #0d6938;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .hero {
+            text-align: center;
+            padding: 3rem 2rem;
+            background-color: #ffffff;
+            margin-bottom: 2rem;
+            animation: slideIn 1s ease-out;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #0d6938;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .hero .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .hero button {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        .btn-green {
+            background-color: #0d6938;
+            color: #fff;
+        }
+        .btn-gray {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .hero button:hover {
+            transform: scale(1.1);
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .content {
+            padding: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            background-color: #ffffff;
+            margin: 0 2rem 2rem 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            animation: fadeIn 1.5s ease-in;
+        }
+        .content .text {
+            flex: 1;
+            min-width: 300px;
+        }
+        .content .text h2 {
+            font-size: 2rem;
+            color: #0d6938;
+            margin-bottom: 1rem;
+        }
+        .content .text p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        .content .image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        .content .image img {
+            max-width: 100%;
+            border-radius: 1rem;
+            transition: transform 0.3s;
+        }
+        .content .image img:hover {
+            transform: scale(1.05);
+        }
+        .details {
+            padding: 2rem;
+            background-color: #ffffff;
+            margin: 0 2rem 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            animation: fadeIn 2s ease-in;
+        }
+        .details h2 {
+            font-size: 2rem;
+            color: #0d6938;
+            margin-bottom: 1rem;
+        }
+        .details p {
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #0d6938;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+        footer {
+            animation: fadeIn 3s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Trezor</div>
+        <nav>
+            <a href="#">Products</a>
+            <a href="#">App</a>
+            <a href="#">Coins</a>
+            <a href="#">Learn & Support</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Congratulations on getting your new Trezor</h1>
+        <p>Setup & take control of your Trezor with our desktop app. Download Trezor Suite below.</p>
+        <div class="buttons">
+            <button class="btn-green">Download for desktop</button>
+            <button class="btn-gray">Trezor Suite for web</button>
+        </div>
+        <p>Version: v24.9.2 · Signature · Signing key 2020 Signing key 2021</p>
+    </section>
+
+    <section class="content">
+        <div class="text">
+            <h2>Coin Management</h2>
+            <p>Connect your hardware wallet with Trezor Suite. Send & receive coins, track your portfolio, trade assets, or pay for daily essentials directly from the app.</p>
+        </div>
+        <div class="image">
+            <img src="https://trezor.io/images/suite/coin-security.png" alt="Coin Management">
+        </div>
+    </section>
+
+    <section class="details">
+        <h2>Welcome to Trézor.io/start</h2>
+        <p>Trézor.io/start is the ultimate starting point for new Trezor users. Designed to make your journey simple and secure, this page guides you through setting up your Trezor hardware wallet with ease. From installing the Trezor Suite to connecting your device and creating a recovery seed, Trézor.io/start ensures that every step is seamless and intuitive.</p>
+        <p>With Trézor.io/start, you can gain full control of your digital assets. This platform is built to provide unmatched security, protecting your cryptocurrencies from online threats and unauthorized access. Trezor Suite, available for both desktop and web, offers a user-friendly interface for managing your portfolio, trading assets, and keeping track of market trends.</p>
+        <p>Setting up your wallet is quick and straightforward. Simply follow the on-screen instructions to initialize your device and back up your recovery seed. This seed is your safety net, ensuring that you can always recover your funds even if your device is lost or damaged.</p>
+        <p>Trézor.io/start is not just about security; it's also about empowerment. By taking control of your Trezor, you're joining a global community of crypto enthusiasts who value privacy and independence. Whether you're a seasoned investor or a crypto newbie, Trézor.io/start provides all the tools and resources you need to succeed in the world of digital finance.</p>
+        <p>Visit Trézor.io/start today to unlock the full potential of your Trezor wallet. Discover how easy it is to secure, manage, and grow your crypto assets, all while enjoying peace of mind. Your journey to financial freedom begins here.</p>
+    </section>
+
+    <footer>
+        &copy; 2024 Trezor. All rights reserved.
+    </footer>
+</body>
+</html>
